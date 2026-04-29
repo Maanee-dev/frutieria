@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-teal: #0F4F46;
+  --color-brand-orange: #E9962F;
+  --color-brand-sand: #E9D7BF;
+  --color-brand-peach: #F2B56B;
+  --color-brand-offwhite: #F8F9FA; /* Slightly cooler light grey to match reference */
+  --color-brand-lightgrey: #E6E6E6;
+  --color-brand-charcoal: #3A3A3A;
+  --color-brand-stroke: #D9822B;
+  --color-brand-dark: #0C3D36;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-brand-charcoal);
+  background-color: var(--color-brand-offwhite);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+/* Custom utility for the vertical text in the hero */
+.writing-vertical-rl {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
